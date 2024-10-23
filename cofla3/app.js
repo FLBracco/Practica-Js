@@ -12,11 +12,6 @@ class Celular {
         this.encedido = false;
         this.info = `Telefono marca ${this._nombre} con un color ${this._color}, un peso de ${this._peso}, una resolucion de pantalla de ${this._resPantalla}, una camara de ${this._camara} y con una memoria ram de ${this._ram}.`
     }
-    
-    verInfo(){
-        console.log(this.info);
-    }
-
     prender(){
         if(this.encedido == false){
             console.log('Prendiendo celular');
@@ -46,7 +41,12 @@ class Celular {
     grabarVideo(){
         console.log(`Video grabado en una resolucion de: ${this._camara}`);
     }
+    verInfo(){
+        console.log(`Nombre: ${this._nombre}, Color: ${this._color}, Peso: ${this._peso}, ResolucionDePantallas: ${this._resPantalla}, Camara: ${this._camara} y una MemoriaRam: ${this._ram}`);
+    }
 }
+
+
 
 const celular = new Celular('Samsung', 'rojo', '250gr', '1920x1080', '13MPx', '8 GB');
 const celular2 = new Celular('Iphone', 'rojo', '250gr', '1920x1080', '13MPx', '8 GB');
