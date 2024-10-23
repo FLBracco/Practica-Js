@@ -46,13 +46,30 @@ class Celular {
     }
 }
 
+class celularAltaGama extends Celular{
+    constructor(nombre, color, peso, resPantalla, camara, ram, rdce){
+        super(nombre, color, peso, resPantalla, camara, ram);
+        this._resCamaraExtra = rdce;
+    }
+    grabarVideoLento(){
+        console.log('Estas grabando en camara lenta');
+    }
+    reconocimientoFacil(){
+        console.log('Vamos a iniciar el reconocimiento facial');
+    }
+    mobileInfoAltaGama(){
+        console.log(`${this.verInfo()}, Resolucion de camara Extra: ${this._resCamaraExtra}`);
+    }
+}
 
-
+const celular4 = new celularAltaGama('Samsung', 'Verde', '400gr', '2440 x 1080', '44mpx', '32 GB', '12MPX');
 const celular = new Celular('Samsung', 'rojo', '250gr', '1920x1080', '13MPx', '8 GB');
 const celular2 = new Celular('Iphone', 'rojo', '250gr', '1920x1080', '13MPx', '8 GB');
 const celular3 = new Celular('Xiaomi', 'rojo', '250gr', '1920x1080', '13MPx', '8 GB');
 
-celular.verInfo();
-celular2.verInfo();
-celular3.verInfo();
-celular.prender();
+// celular.verInfo();
+// celular2.verInfo();
+// celular3.verInfo();
+// celular.prender();
+
+celular4.mobileInfoAltaGama();
