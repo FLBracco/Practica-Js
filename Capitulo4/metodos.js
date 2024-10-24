@@ -1,4 +1,5 @@
-let cadena = 'cadena de prueba';
+// Metodos de cadena
+let cadena = 'cadena de prueba ';
 let cadena2 = 'cadena 2'
 let resultado = cadena.concat(cadena2);
 // .concat(); Junta 2 o mas cadenas y devuelve una nueva.
@@ -25,6 +26,28 @@ let res6 = cadena.lastIndexOf('a');
 //console.log(res6);
 
 let res7 = '5'
-// .padStart() || .padEnd(); rellena una cadena con una nueva cadena a eleccion x cantidades de veces, tanto al comienzo como al final.
+// .padStart() || .padEnd(); rellena una cadena delimitando los caracteres, si los tiene no agrega nada si no agrega el contenido con los caracteres marcados.
+// console.log(res7.padEnd(30, "0"));
 
-console.log(res7.padStart(2, "0"));
+let res8 = cadena.repeat(4)
+// .repeat(); devuelve la misma cadena repetida las veces que quieramos.
+// console.log(res8);
+
+let cadena3 = "hola, como, estas";
+// .split(); Divide la cadena como le pidamos
+let res9 = cadena3.split(",");
+// console.log(cadena3.substring(0,4)); //Retorna la cadena en los valores que le pasemos, tanto el inicio como el final.
+
+// .toLowerCase() 
+// console.log(cadena3.toLowerCase()); // Convierte la cadena en miniscula
+// .toUpperCase()
+// console.log(cadena3.toUpperCase()); // Convierte la cadena en mayuscula
+
+// .toString()
+// .toString(); Convierte a string el valor que le pasemos.
+
+// .trim()
+let texto = "  hola  "; // 8 caracteres
+let text = texto.trim(); // 4 caracteres
+
+console.log(text.valueOf());
