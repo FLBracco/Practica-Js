@@ -29,7 +29,13 @@ estaciones.splice(1, 0, "otoño");
 console.log(estaciones);
 
 //Accesores
+const palabras = ["abecedario", "manzana", "pera", "banana"];
+console.log(palabras);
+
 // .join(); Une todos los elementos de una matriz (u objeto similar) en una cadena y la devuelve.
+let newPalabras = palabras.join(" - ");
+console.log(newPalabras);
+
 // .slice(); Devuelve una parte del array dentro de un nuevo array empezando por un inicio hasta un fin(fin no incluido).
 // metodos ya vistos en cadenas: toString(), indexOf(), lastIndexOf()
 
